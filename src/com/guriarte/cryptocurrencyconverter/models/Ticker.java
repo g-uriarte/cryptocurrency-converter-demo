@@ -1,7 +1,6 @@
 package com.guriarte.cryptocurrencyconverter.models;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.Instant;
 import java.util.Map;
 
 public class Ticker {
@@ -9,16 +8,16 @@ public class Ticker {
     private final String name;
     private final String symbol;
     private final int rank;
-    private final int circulatingSupply;
-    private final int totalSupply;
-    private final int maxSupply;
-    private final LocalDate lastUpdated;
+    private final double circulatingSupply;
+    private final double totalSupply;
+    private final double maxSupply;
+    private final Instant lastUpdated;
     private final Map<String, Quote> quotes;
 
     public Ticker(
             String id, String name, String symbol,
-            int rank, int circulatingSupply, int totalSupply,
-            int maxSupply, LocalDate lastUpdated, Map<String, Quote> quotes
+            int rank, double circulatingSupply, double totalSupply,
+            double maxSupply, Instant lastUpdated, Map<String, Quote> quotes
     ) {
         this.id = id;
         this.name = name;
@@ -47,19 +46,19 @@ public class Ticker {
         return rank;
     }
 
-    public int getCirculatingSupply() {
+    public double getCirculatingSupply() {
         return circulatingSupply;
     }
 
-    public int getTotalSupply() {
+    public double getTotalSupply() {
         return totalSupply;
     }
 
-    public int getMaxSupply() {
+    public double getMaxSupply() {
         return maxSupply;
     }
 
-    public Date getLastUpdated() {
+    public Instant getLastUpdated() {
         return lastUpdated;
     }
 

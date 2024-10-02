@@ -9,9 +9,9 @@ public record TickerResponse(
         String name,
         String symbol,
         int rank,
-        @SerializedName("circulating_supply") int circulatingSupply,
-        @SerializedName("total_supply") int totalSupply,
-        @SerializedName("max_supply") int maxSupply,
+        @SerializedName("circulating_supply") double circulatingSupply,
+        @SerializedName("total_supply") double totalSupply,
+        @SerializedName("max_supply") double maxSupply,
         @SerializedName("last_updated") String lastUpdated,
         Map<String, QuoteResponse> quotes
 ) { }

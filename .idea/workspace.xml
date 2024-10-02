@@ -9,6 +9,11 @@
       <change beforePath="$PROJECT_DIR$/cryptocurrency-converter-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cryptocurrency-converter-demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/http/HttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/http/HttpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/mappers/QuoteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/mappers/QuoteMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/mappers/TickerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/mappers/TickerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/models/Quote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/models/Quote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/models/Ticker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/models/Ticker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/service/TickerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/service/TickerResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +44,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/xana/Escritorio/repositories/projects/java/cryptocurrency-converter-demo/libs/gson-2.11.0.jar",
+    "last_opened_file_path": "/home/xana/Escritorio/repositories/projects/java/simple-credit-card-buyer",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/xana/Escritorio/repositories/projects/java/cryptocurrency-converter-demo/src/Main.java",
     "project.structure.last.edited": "Modules",
@@ -55,6 +61,20 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/libs" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="cryptocurrency-converter-demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
