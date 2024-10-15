@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="265d03ec-f965-457d-979a-875f147028d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/actions/ConvertAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/actions/ConvertAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/messages/TokenListMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/messages/TokenListMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/xana/Escritorio/repositories/projects/java/cryptocurrency-converter-demo",
     "nodejs_package_manager_path": "npm",
