@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="265d03ec-f965-457d-979a-875f147028d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryptocurrency-converter-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cryptocurrency-converter-demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/http/HttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/http/HttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/mappers/QuoteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/mappers/QuoteMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/mappers/TickerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/mappers/TickerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/models/Quote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/models/Quote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/models/Ticker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/models/Ticker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/service/TickerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/service/TickerResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/actions/ConvertAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/actions/ConvertAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/messages/TokenListMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guriarte/cryptocurrencyconverter/messages/TokenListMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +20,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -48,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/xana/Escritorio/repositories/projects/java/simple-credit-card-buyer",
+    "last_opened_file_path": "/home/xana/Escritorio/repositories/projects/java/cryptocurrency-converter-demo",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/xana/Escritorio/repositories/projects/java/cryptocurrency-converter-demo/src/Main.java",
     "project.structure.last.edited": "Modules",

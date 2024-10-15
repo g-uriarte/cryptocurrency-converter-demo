@@ -6,19 +6,19 @@ import com.guriarte.cryptocurrencyconverter.models.Coin;
 import com.guriarte.cryptocurrencyconverter.models.Ticker;
 import com.guriarte.cryptocurrencyconverter.service.CoinPaprikaApi;
 
-import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class ConvertAction implements Action {
 
     public static int OPTION = 1;
 
-    private final List<Coin> coins;
+    private final Map<Integer, Coin> coins;
     private final CoinPaprikaApi coinPaprikaApi;
     private final Scanner sc;
 
     public ConvertAction(
-        List<Coin> coins, CoinPaprikaApi coinPaprikaApi,
+        Map<Integer, Coin> coins, CoinPaprikaApi coinPaprikaApi,
         Scanner sc
     ) {
         this.coins = coins;
@@ -38,11 +38,12 @@ public class ConvertAction implements Action {
 
     @Override
     public void perform() throws HttpUnexpectedError {
-        var tokenIn = selectToken();
+        var tokenIn = selectToken(TokenType.IN);
+
         System.out.print("Enter the amount: ");
         double amount1 = sc.nextDouble();
 
-        var tokenOut = selectToken();
+        var tokenOut = selectToken(TokenType.OUT);
 
         var tokenInUsdPrice = tokenIn.getQuote("USD").getPrice();
         var tokenOutUsdPrice = tokenOut.getQuote("USD").getPrice();
@@ -52,22 +53,22 @@ public class ConvertAction implements Action {
         System.out.println("Result: Token in (" + tokenIn.getSymbol() + ") amount: " + amount1 + " -> token out: (" + tokenOut.getSymbol() + ") amount: " + expectedOutput);
     }
 
-    private Ticker selectToken() throws HttpUnexpectedError {
+    private Ticker selectToken(TokenType tokenType) throws HttpUnexpectedError {
         boolean validId = false;
-        String tokenId;
-        var coinIds = coins.stream().map(Coin::getId).toList();
+        int tokenId;
+        var coinIds = coins.keySet();
         TokenListMessage tokenListMessage = TokenListMessage.create(coins);
         do {
-            System.out.println("Select a token in (enter the id): ");
+            System.out.println("Select a token" + tokenType.toString() + " (enter the id): ");
             System.out.println(tokenListMessage);
             System.out.print("token id: ");
-            tokenId = sc.next();
+            tokenId = sc.nextInt();
             if (coinIds.contains(tokenId)) {
                 validId = true;
             }
         } while (!validId);
 
-        return this.coinPaprikaApi.getTicker(tokenId);
+        return this.coinPaprikaApi.getTicker(coins.get(tokenId).getId());
     }
 
 }
